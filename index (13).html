@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Success Ebri Ferdinard | Social Media Marketer for Wellness &amp; ADHD Coaches</title>
+<meta name="description" content="I help founder-led wellness and ADHD coaches turn quiet followers into booked calls, with content that sounds like you and systems that keep working while you sleep.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Lora:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#241b14;
+    --ink-soft:#3a2c20;
+    --brand:#715c4e;
+    --brand-light:#8f7862;
+    --accent:#d99c56;
+    --accent-dark:#b97f3e;
+    --accent-pale:#f7e9d7;
+    --cream:#faf6f1;
+    --pale:#f3ede7;
+    --white:#ffffff;
+    --text:#6b5a4e;
+    --text-soft:#948577;
+    --border:#e9e0d6;
+  }
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    font-family:'Plus Jakarta Sans', sans-serif;
+    background:var(--cream);
+    color:var(--text);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{ max-width:100%; display:block; }
+  a{ text-decoration:none; color:inherit; }
+  ul{ list-style:none; margin:0; padding:0; }
+  .accent-script{ font-family:'Lora', serif; font-style:italic; color:var(--accent-dark); font-weight:500; }
+  .wrap{ max-width:1280px; margin:0 auto; padding:0 6vw; }
+  section{ position:relative; padding:110px 0; }
+  h1,h2,h3{ color:var(--ink); font-weight:800; margin:0; letter-spacing:-0.02em; }
+  .eyebrow{ display:inline-flex; align-items:center; gap:8px; font-size:13.5px; font-weight:700; color:var(--brand); margin-bottom:14px; }
+  .eyebrow::before{ content:'—'; color:var(--accent-dark); }
+  .section-head{ max-width:600px; margin-bottom:56px; }
+  .section-head p{ font-size:16.5px; color:var(--text-soft); margin-top:14px; }
+  .reveal{ opacity:0; transform:translateY(30px); transition:opacity .7s ease, transform .7s ease; }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+
+  .btn{ display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:16px 30px; border-radius:100px; font-weight:700; font-size:14.5px; cursor:pointer; border:1.5px solid transparent; transition:transform .25s ease, box-shadow .25s ease; position:relative; overflow:hidden; }
+  .btn-dark{ background:var(--ink); color:var(--white); }
+  .btn-dark:hover{ box-shadow:0 14px 30px rgba(36,27,20,0.28); }
+  .btn-ghost{ background:var(--white); color:var(--ink); border-color:var(--border); }
+  .btn-ghost:hover{ border-color:var(--ink); }
+  .btn-play{ width:34px; height:34px; border-radius:50%; background:var(--accent); display:flex; align-items:center; justify-content:center; font-size:12px; color:var(--ink); flex-shrink:0; }
+  .magnetic{ will-change:transform; }
+  .ripple{ position:absolute; border-radius:50%; background:rgba(255,255,255,0.4); transform:scale(0); animation:rippleAnim .6s ease-out; pointer-events:none; }
+  @keyframes rippleAnim{ to{ transform:scale(2.6); opacity:0; } }
+
+  /* NAV */
+  .nav-outer{ position:fixed; top:18px; left:0; right:0; z-index:1000; display:flex; justify-content:center; padding:0 4vw; }
+  header{ display:flex; align-items:center; justify-content:space-between; gap:20px; background:var(--ink); border-radius:100px; padding:12px 12px 12px 24px; width:100%; max-width:1100px; box-shadow:0 18px 40px rgba(36,27,20,0.22); }
+  .logo{ font-weight:800; font-size:17px; color:var(--white); display:flex; align-items:center; gap:9px; }
+  .logo-badge{ width:26px; height:26px; border-radius:50%; background:var(--accent); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:800; color:var(--ink); }
+  nav ul{ display:flex; align-items:center; gap:28px; }
+  nav a.nav-link{ font-size:13.5px; font-weight:600; color:rgba(255,255,255,0.72); position:relative; }
+  nav a.nav-link.active{ color:var(--white); }
+  nav a.nav-link.active::after{ content:''; position:absolute; left:0; right:0; bottom:-14px; height:2px; background:var(--accent); }
+  .nav-cta{ background:var(--white); color:var(--ink); padding:11px 22px; border-radius:100px; font-size:13.5px; font-weight:700; }
+  .burger{ display:none; flex-direction:column; gap:4px; cursor:pointer; padding:4px; }
+  .burger span{ width:20px; height:2px; background:var(--white); border-radius:2px; }
+
+
+
+  html{ overflow-x:hidden; }
+  .logo,.nav-cta{ white-space:nowrap; }
+  @media (max-width:480px){ header{ padding:10px 10px 10px 16px; gap:10px; } .logo{ font-size:15px; } .nav-cta{ padding:9px 14px; font-size:12.5px; } }
+
+
+  /* RESULTS */
+  .result-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:24px; margin-bottom:64px; }
+  .result-card{ display:grid; grid-template-columns:42% 1fr; gap:22px; background:var(--white); border:1px solid var(--border); border-radius:24px; padding:18px; position:relative; transition:transform .3s ease, box-shadow .3s ease; }
+  .result-card:hover{ transform:translateY(-5px); box-shadow:0 24px 50px rgba(36,27,20,0.12); }
+  .result-shot{ background:var(--accent-pale); border-radius:16px; padding:12px; display:flex; align-items:center; }
+  .result-shot img, .brand-shot img{ display:block; width:100%; height:auto; border-radius:10px; box-shadow:0 10px 24px rgba(36,27,20,0.25); }
+  .result-body{ display:flex; flex-direction:column; justify-content:center; padding:6px 6px 6px 0; }
+  .result-body .badge-new{ align-self:flex-start; background:var(--accent); color:var(--ink); font-size:10.5px; font-weight:800; padding:5px 12px; border-radius:100px; margin-bottom:10px; }
+  .result-tag{ font-size:12.5px; font-weight:700; color:var(--accent-dark); margin:0; }
+  .result-body h3{ font-size:20px; color:var(--ink); margin:4px 0 14px; }
+  .result-stat{ font-size:clamp(26px,3vw,34px); font-weight:800; color:var(--ink); line-height:1.1; }
+  .result-stat i{ font-family:'Lora',serif; font-weight:500; color:var(--accent-dark); font-size:.7em; }
+  .result-label{ font-size:13px; color:var(--text-soft); font-weight:600; margin-top:4px; }
+  .result-desc{ font-size:14px; color:var(--text); line-height:1.6; margin:14px 0 0; }
+  .sub-head{ font-size:20px; color:var(--ink); margin:0 0 22px; }
+  .brand-row{ display:grid; grid-template-columns:repeat(2,1fr); gap:24px; margin-bottom:64px; }
+  .brand-card{ display:grid; grid-template-columns:44% 1fr; gap:22px; align-items:center; background:var(--white); border:1px solid var(--border); border-radius:24px; padding:18px; }
+  .brand-shot{ background:var(--accent-pale); border-radius:16px; padding:12px; }
+  .brand-card h3{ font-size:18px; color:var(--ink); margin:0 0 8px; }
+  .brand-card p{ font-size:14px; color:var(--text); line-height:1.6; margin:0; }
+  .work-card.more-card{ background:var(--ink); border-color:var(--ink); }
+  .work-card.more-card .name{ color:var(--white); }
+  .work-card.more-card .desc{ color:rgba(255,255,255,0.75); }
+  .work-card.more-card .tag{ color:var(--accent); }
+  .work-card.more-card .btn{ background:var(--accent); color:var(--ink); }
+  @media (max-width:1100px){ .result-grid, .brand-row{ grid-template-columns:1fr; } }
+  @media (max-width:560px){ .result-card, .brand-card{ grid-template-columns:1fr; } }
+
+
+  /* ABOUT PHOTOS */
+  .about-photos{ display:grid; grid-template-columns:repeat(2,1fr); gap:22px; margin-top:64px; max-width:820px; }
+  .about-photos figure{ margin:0; border-radius:22px; overflow:hidden; border:1px solid rgba(255,255,255,0.12); box-shadow:0 24px 50px rgba(0,0,0,0.35); }
+  .about-photos figure:nth-child(2){ transform:translateY(-18px); }
+  .about-photos img{ display:block; width:100%; height:auto; aspect-ratio:4/5; object-fit:cover; }
+  @media (max-width:700px){ .about-photos{ grid-template-columns:1fr; gap:16px; } .about-photos figure:nth-child(2){ transform:none; } }
+
+  /* DESIGNS */
+  .design-grid{ columns:3; column-gap:22px; }
+  .design-card{ display:block; width:100%; break-inside:avoid; margin:0 0 22px; padding:0; background:var(--white); border:1px solid var(--border); border-radius:20px; overflow:hidden; cursor:zoom-in; text-align:left; font:inherit; color:inherit; transition:transform .25s ease, box-shadow .25s ease; }
+  .design-card:hover{ transform:translateY(-4px); box-shadow:0 24px 50px rgba(36,27,20,0.12); }
+  .design-card:focus-visible{ outline:3px solid var(--accent); outline-offset:3px; }
+  .design-card img{ display:block; width:100%; height:auto; }
+  .design-cap{ display:block; padding:14px 18px 16px; font-size:14px; color:var(--text-soft); }
+  .design-cap strong{ display:block; font-size:16px; color:var(--ink); margin-bottom:2px; }
+  @media (max-width:980px){ .design-grid{ columns:2; } }
+  @media (max-width:600px){ .design-grid{ columns:1; } }
+
+  /* CERTIFICATIONS */
+  .certs{ background:var(--pale); }
+  .cert-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:28px; max-width:980px; margin:0 auto; }
+  .cert-card{ background:var(--white); border:1px solid var(--border); border-radius:22px; padding:16px 16px 22px; text-align:left; cursor:zoom-in; font:inherit; color:inherit; transition:transform .25s ease, box-shadow .25s ease; }
+  .cert-card:hover{ transform:translateY(-4px); box-shadow:0 24px 50px rgba(36,27,20,0.12); }
+  .cert-card:focus-visible{ outline:3px solid var(--accent); outline-offset:3px; }
+  .cert-card img{ width:100%; aspect-ratio:4/3; object-fit:contain; background:var(--cream); border-radius:14px; border:1px solid var(--border); }
+  .cert-card h3{ font-size:19px; margin:18px 6px 4px; color:var(--ink); }
+  .cert-card p{ font-size:14.5px; color:var(--text-soft); margin:0 6px; }
+  .lightbox{ position:fixed; inset:0; background:rgba(36,27,20,0.88); display:none; align-items:center; justify-content:center; z-index:2000; padding:5vw; cursor:zoom-out; }
+  .lightbox.open{ display:flex; }
+  .lightbox img{ max-width:100%; max-height:100%; border-radius:14px; background:#fff; box-shadow:0 30px 80px rgba(0,0,0,0.4); }
+  @media (max-width:760px){ .cert-grid{ grid-template-columns:1fr; } }
+
+  /* HERO */
+  .hero{ padding-top:170px; padding-bottom:0; }
+  .hero-grid{ display:grid; grid-template-columns:1fr 0.9fr; gap:40px; align-items:center; }
+  .hello-tag{ display:inline-flex; align-items:center; gap:6px; font-family:'Plus Jakarta Sans'; font-size:12.5px; font-weight:700; color:var(--ink); border:1.5px dashed var(--border); border-radius:10px; padding:7px 14px; margin-bottom:26px; position:relative; }
+  .hero-text h1{ font-size:clamp(32px,4vw,50px); line-height:1.16; }
+  .hero-text h1 .script-line{ font-family:'Lora', serif; font-style:italic; font-weight:600; color:var(--accent-dark); }
+  .hero-text .subtext{ font-size:16.5px; color:var(--text-soft); max-width:460px; margin:22px 0 34px; }
+  .hero-buttons{ display:flex; gap:14px; flex-wrap:wrap; }
+  .hero-visual{ position:relative; display:flex; justify-content:center; }
+  .blob{ position:absolute; width:340px; height:340px; background:var(--accent); border-radius:62% 38% 55% 45% / 55% 45% 62% 38%; top:10%; right:6%; z-index:0; }
+  .hero-photo{ position:relative; z-index:2; width:290px; height:360px; border-radius:150px 150px 30px 30px; overflow:hidden; border:6px solid var(--white); box-shadow:0 30px 60px rgba(36,27,20,0.2); margin-top:20px; }
+  .hero-photo img{ width:100%; height:100%; object-fit:cover; }
+  .spin-badge{ position:absolute; z-index:3; width:104px; height:104px; top:6%; right:2%; }
+  .spin-badge .spin-group{ animation:spin 9s linear infinite; transform-origin:52px 52px; }
+  @keyframes spin{ to{ transform:rotate(360deg); } }
+  .spin-badge .center-dot{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; }
+  .spin-badge .center-dot span{ width:38px; height:38px; border-radius:50%; background:var(--ink); display:flex; align-items:center; justify-content:center; color:var(--white); font-size:15px; }
+  .float-pill{ position:absolute; z-index:3; background:var(--white); color:var(--ink); font-size:12.5px; font-weight:700; padding:9px 16px; border-radius:100px; box-shadow:0 12px 26px rgba(36,27,20,0.16); }
+  .float-pill.p1{ bottom:14%; left:-6%; transform:rotate(-4deg); }
+  .float-pill.p2{ top:2%; left:2%; transform:rotate(3deg); }
+
+  /* TICKER */
+  .ticker-band{ background:var(--accent); transform:rotate(-1.4deg); margin:56px -6vw 0; padding:18px 0; overflow:hidden; }
+  .ticker-track{ display:flex; gap:44px; white-space:nowrap; animation:tickerMove 26s linear infinite; }
+  .ticker-track span{ font-size:16px; font-weight:800; color:var(--ink); display:inline-flex; align-items:center; gap:44px; text-transform:uppercase; letter-spacing:0.02em; }
+  .ticker-track span::after{ content:'✳'; color:var(--ink); opacity:0.5; margin-left:44px; }
+  @keyframes tickerMove{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+
+  /* SERVICES */
+  .services{ padding-top:150px; }
+  .services-head-row{ display:flex; align-items:flex-end; justify-content:space-between; gap:30px; margin-bottom:56px; flex-wrap:wrap; }
+  .services-head-row h2{ font-size:clamp(28px,3.4vw,40px); }
+  .services-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .service-card{ background:var(--pale); border-radius:20px; padding:32px 26px; transition:transform .3s ease, box-shadow .3s ease, background .3s ease; }
+  .service-card:hover{ transform:translateY(-6px); background:var(--white); box-shadow:0 20px 40px rgba(36,27,20,0.1); }
+  .service-icon{ width:50px; height:50px; border-radius:14px; background:var(--white); display:flex; align-items:center; justify-content:center; font-size:22px; margin-bottom:22px; box-shadow:0 8px 18px rgba(36,27,20,0.08); }
+  .service-card h3{ font-size:17.5px; margin-bottom:10px; }
+  .service-card p{ font-size:14px; color:var(--text-soft); margin:0 0 16px; }
+  .learn-more{ font-size:13px; font-weight:700; color:var(--ink); display:inline-flex; align-items:center; gap:6px; }
+
+  /* WORK / PROJECTS */
+  .work{ background:var(--pale); }
+  .work-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .work-card{ background:var(--white); border-radius:20px; padding:30px 26px; border:1px solid var(--border); transition:transform .3s ease, box-shadow .3s ease; position:relative; }
+  .work-card:hover{ transform:translateY(-6px); box-shadow:0 20px 40px rgba(36,27,20,0.1); }
+  .work-card .badge-new{ position:absolute; top:-11px; right:18px; background:var(--accent); color:var(--ink); font-size:10.5px; font-weight:800; padding:5px 12px; border-radius:100px; }
+  .work-card .name{ font-weight:800; color:var(--ink); font-size:16.5px; }
+  .work-card .tag{ font-size:12px; color:var(--accent-dark); font-weight:700; margin-top:5px; text-transform:uppercase; letter-spacing:0.03em; }
+  .work-card .desc{ font-size:13.5px; color:var(--text-soft); margin-top:12px; line-height:1.6; }
+
+  /* ABOUT (dark) */
+  .about{ background:var(--ink); color:rgba(255,255,255,0.82); }
+  .about .eyebrow{ color:var(--accent); }
+  .about .eyebrow::before{ color:var(--accent); }
+  .about-grid{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:70px; align-items:center; }
+  .about-visual{ position:relative; display:flex; justify-content:center; padding:40px 0; }
+  .about-blob{ position:absolute; width:280px; height:280px; background:var(--accent); border-radius:50%; top:8%; left:14%; z-index:0; }
+  .about-photo{ position:relative; z-index:2; width:250px; height:250px; border-radius:50%; overflow:hidden; border:6px solid var(--ink-soft); box-shadow:0 24px 50px rgba(0,0,0,0.35); }
+  .about-photo img{ width:100%; height:100%; object-fit:cover; }
+  .about-tag{ position:absolute; z-index:3; background:var(--white); color:var(--ink); font-size:11.5px; font-weight:800; padding:8px 14px; border-radius:100px; box-shadow:0 10px 20px rgba(0,0,0,0.25); white-space:nowrap; }
+  .at1{ top:4%; left:0; transform:rotate(-6deg); }
+  .at2{ top:24%; right:-4%; transform:rotate(4deg); background:var(--accent); }
+  .at3{ bottom:26%; left:-8%; transform:rotate(-3deg); }
+  .at4{ bottom:6%; right:4%; transform:rotate(5deg); }
+  h2.on-dark, .about h2{ color:var(--white); font-size:clamp(26px,3.2vw,36px); margin-bottom:22px; }
+  .about-content p{ margin:0 0 16px; font-size:15.5px; color:rgba(255,255,255,0.68); }
+  .about-quote{ border-left:3px solid var(--accent); padding:4px 0 4px 18px; margin:22px 0; font-size:15.5px; font-style:italic; color:var(--white); font-family:'Lora', serif; }
+  .stats-row{ display:flex; gap:44px; margin:32px 0 34px; flex-wrap:wrap; }
+  .stat-num{ font-size:32px; font-weight:800; color:var(--accent); letter-spacing:-0.02em; }
+  .stat-label{ font-size:12.5px; color:rgba(255,255,255,0.55); margin-top:4px; }
+  .about-cta{ display:flex; align-items:center; gap:24px; flex-wrap:wrap; }
+  .signature{ font-family:'Lora', serif; font-style:italic; font-size:22px; color:var(--accent); }
+
+  /* PROCESS */
+  .process-list{ max-width:760px; margin:0 auto; display:flex; flex-direction:column; }
+  .process-step{ display:grid; grid-template-columns:52px 1fr; gap:22px; padding:24px 0; border-bottom:1px solid var(--border); }
+  .process-step:last-child{ border-bottom:none; }
+  .step-num{ width:48px; height:48px; border-radius:14px; background:var(--pale); color:var(--brand); font-weight:800; font-size:16px; display:flex; align-items:center; justify-content:center; }
+  .step-body h3{ font-size:16.5px; margin-bottom:5px; }
+  .step-body p{ font-size:13.5px; color:var(--text-soft); margin:0; }
+  .step-optional{ display:inline-block; font-size:10.5px; font-weight:700; color:var(--accent-dark); background:var(--accent-pale); padding:2px 9px; border-radius:100px; margin-left:8px; vertical-align:middle; }
+
+  /* INTRO VIDEO */
+  .intro-video{ background:var(--pale); text-align:center; }
+  .intro-video .section-head{ margin:0 auto 46px; text-align:center; }
+  .intro-video .eyebrow{ justify-content:center; }
+  .video-frame{ max-width:740px; margin:0 auto; aspect-ratio:16/9; border-radius:24px; background:var(--ink); position:relative; overflow:hidden; box-shadow:0 30px 60px rgba(36,27,20,0.18); }
+
+  /* TOOLS */
+  .tools-row{ display:flex; justify-content:center; gap:26px; flex-wrap:wrap; margin-top:10px; }
+  .tool-badge{ width:74px; height:74px; border-radius:50%; background:var(--pale); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:800; color:var(--brand); text-align:center; line-height:1.2; box-shadow:0 8px 18px rgba(36,27,20,0.06); transition:transform .25s ease; }
+  .tool-badge:hover{ transform:translateY(-6px); background:var(--accent-pale); }
+
+  /* REVIEWS */
+  .testimonial-card{ max-width:700px; margin:0 auto; background:var(--pale); border-radius:26px; padding:50px 46px; text-align:center; }
+  .testimonial-avatar{ width:72px; height:72px; border-radius:50%; margin:0 auto 20px; background:var(--ink); display:flex; align-items:center; justify-content:center; color:var(--white); font-weight:800; font-size:24px; border:4px solid var(--white); box-shadow:0 10px 24px rgba(36,27,20,0.12); }
+  .testimonial-quote{ font-size:18px; color:var(--ink); font-weight:600; line-height:1.6; }
+  .testimonial-name{ margin-top:20px; font-weight:800; color:var(--accent-dark); font-size:13.5px; letter-spacing:0.02em; }
+  .testimonial-video-link{ display:inline-block; margin-top:16px; font-size:13px; font-weight:700; color:var(--ink); border-bottom:1.5px solid var(--ink); }
+
+  /* CONTACT */
+  .contact{ text-align:center; background:var(--pale); }
+  .contact h2{ font-size:clamp(28px,3.6vw,42px); }
+  .contact p.body{ max-width:540px; margin:18px auto 36px; font-size:16px; color:var(--text-soft); }
+  .contact-socials{ display:flex; justify-content:center; gap:24px; margin-top:30px; flex-wrap:wrap; }
+  .contact-socials a{ font-size:13.5px; font-weight:700; color:var(--ink); border-bottom:1.5px solid transparent; }
+  .contact-socials a:hover{ border-color:var(--ink); }
+  .contact-note{ font-size:13px; color:var(--text-soft); max-width:460px; margin:26px auto 0; }
+  .closing-line{ font-family:'Lora', serif; font-style:italic; color:var(--brand); font-size:17px; margin-top:30px; }
+  .booking-wrap{ max-width:800px; margin:50px auto 0; background:var(--white); border-radius:24px; padding:34px; box-shadow:0 24px 50px rgba(36,27,20,0.1); }
+  .booking-wrap h3{ font-size:18px; margin-bottom:16px; color:var(--ink); }
+  #my-cal-inline-30min-social-media-growth-call{ min-height:560px; border-radius:14px; overflow:hidden; }
+
+  footer{ background:var(--ink); color:rgba(255,255,255,0.68); padding:56px 6vw 30px; }
+  .footer-top{ display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:22px; padding-bottom:30px; border-bottom:1px solid rgba(255,255,255,0.1); }
+  .footer-brand{ font-weight:800; font-size:18px; color:var(--white); }
+  .footer-brand span{ color:var(--accent); font-weight:500; font-size:13px; display:block; margin-top:4px; }
+  .footer-tag{ font-size:13.5px; max-width:260px; }
+  .footer-links{ display:flex; gap:16px; flex-wrap:wrap; }
+  .footer-links a{ font-size:13.5px; }
+  .footer-bottom{ display:flex; justify-content:space-between; padding-top:22px; font-size:12px; color:rgba(255,255,255,0.4); flex-wrap:wrap; gap:10px; }
+
+  @media (max-width: 980px){
+    section{ padding:80px 0; }
+    .services{ padding-top:120px; }
+    nav ul{ display:none; }
+    nav ul.open{ display:flex; flex-direction:column; align-items:flex-start; gap:16px; position:absolute; top:76px; left:4vw; right:4vw; background:var(--ink); border-radius:24px; padding:24px; box-shadow:0 18px 40px rgba(36,27,20,0.22); }
+    .burger{ display:flex; }
+    .hero-grid{ grid-template-columns:1fr; }
+    .hero-visual{ margin-top:40px; }
+    .about-grid{ grid-template-columns:1fr; }
+    .services-grid, .work-grid{ grid-template-columns:repeat(2,1fr); }
+    .process-step{ grid-template-columns:40px 1fr; gap:14px; }
+  }
+  @media (max-width: 600px){
+    .wrap{ padding:0 5vw; }
+    .services-grid, .work-grid{ grid-template-columns:1fr; }
+    .testimonial-card{ padding:36px 24px; }
+    .booking-wrap{ padding:18px; }
+    .hero-photo{ width:230px; height:290px; }
+    .blob{ width:260px; height:260px; }
+    .stats-row{ gap:28px; }
+  }
+  @media (prefers-reduced-motion: reduce){ *{ animation-duration:0.001s !important; animation-iteration-count:1 !important; transition-duration:0.001s !important; } }
+  a:focus-visible, button:focus-visible, .btn:focus-visible{ outline:2px solid var(--accent-dark); outline-offset:3px; }
+</style>
+</head>
+<body>
+
+<div class="nav-outer">
+  <header id="siteHeader">
+    <a href="#top" class="logo"><span class="logo-badge">S</span>Success Ebri.</a>
+    <nav>
+      <ul>
+        <li><a class="nav-link active" href="#top">Home</a></li>
+        <li><a class="nav-link" href="#services">Services</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#work">Work</a></li>
+        <li><a class="nav-link" href="#designs">Designs</a></li>
+        <li><a class="nav-link" href="#process">Process</a></li>
+        <li><a class="nav-link" href="#reviews">Reviews</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" style="background:none;border:0;"><span></span><span></span><span></span></button>
+    <a class="nav-cta magnetic" href="https://cal.com/success-ebri-1enwuj/30min-social-media-growth-call" target="_blank" rel="noopener">Contact Me</a>
+  </header>
+</div>
+
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-text reveal">
+      <div class="hello-tag">Hello There!</div>
+      <h1>I'm <span class="script-line">Success Ebri Ferdinard,</span><br>Social Media Marketer &amp; Strategist<br>For Wellness &amp; ADHD Coaches.</h1>
+      <p class="subtext">I help wellness and ADHD coaches turn quiet followers into more inquiries, paying clients and a growing email list. Content that sounds like you, design that looks like a real brand, and a system you don't have to run by hand.</p>
+      <div class="hero-buttons">
+        <a href="#work" class="btn btn-dark magnetic"><span class="btn-play">▶</span>See My Work</a>
+        <a href="https://cal.com/success-ebri-1enwuj/30min-social-media-growth-call" target="_blank" rel="noopener" class="btn btn-ghost magnetic">Book a Call</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="blob"></div>
+      <div class="hero-photo">
+        <img src="profile.jpg" alt="Success Ebri">
+      </div>
+      <div class="spin-badge">
+        <svg viewBox="0 0 104 104" width="104" height="104">
+          <g class="spin-group">
+            <defs><path id="circlePath" d="M52,52 m-40,0 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0"/></defs>
+            <text font-size="8.6" font-weight="700" letter-spacing="1.5" fill="var(--ink)">
+              <textPath href="#circlePath">BOOK A CALL • BOOK A CALL • </textPath>
+            </text>
+          </g>
+        </svg>
+        <div class="center-dot"><span>↗</span></div>
+      </div>
+      <div class="float-pill p1">Social Media Strategist</div>
+      <div class="float-pill p2">Notion Expert</div>
+    </div>
+  </div>
+  <div class="ticker-band" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Content Strategy</span><span>Social Media Management</span><span>Paid Ads</span><span>Email Automation</span><span>LinkedIn Growth</span><span>Notion Systems</span>
+      <span>Content Strategy</span><span>Social Media Management</span><span>Paid Ads</span><span>Email Automation</span><span>LinkedIn Growth</span><span>Notion Systems</span>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="services-head-row reveal">
+      <div>
+        <p class="eyebrow">Services</p>
+        <h2><span class="script-line">Services</span> I Provide</h2>
+      </div>
+      <a href="#work" class="btn btn-dark magnetic">View My Work ↗</a>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">🗺️</div>
+        <h3>Content Strategy &amp; Ideation</h3>
+        <p>A clear plan for what to post, when to post it, and why anyone should care.</p>
+        <a class="learn-more" href="#process">Learn more →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🎯</div>
+        <h3>Buyer Persona &amp; Avatar Development</h3>
+        <p>We figure out exactly who you're talking to, so your content stops talking to everyone.</p>
+        <a class="learn-more" href="#process">Learn more →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">✍️</div>
+        <h3>Content Creation</h3>
+        <p>Captions, carousels, copy, made to stop the scroll and start the conversation.</p>
+        <a class="learn-more" href="#process">Learn more →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">📣</div>
+        <h3>Paid Ads Management</h3>
+        <p>Ads that find the right people and don't just burn your budget being seen by the wrong ones.</p>
+        <a class="learn-more" href="#process">Learn more →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">📧</div>
+        <h3>Email Marketing &amp; Sequences</h3>
+        <p>Automated emails that sound like you wrote them yourself. Your audience won't know the difference.</p>
+        <a class="learn-more" href="#process">Learn more →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">⚙️</div>
+        <h3>Social Media Automations</h3>
+        <p>Your account stays active and responsive even when you're not. You're welcome.</p>
+        <a class="learn-more" href="#process">Learn more →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">💼</div>
+        <h3>LinkedIn Management &amp; Development</h3>
+        <p>Position yourself as the go-to person in your space and build a network that opens doors.</p>
+        <a class="learn-more" href="#process">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Work</p>
+      <h2 style="font-size:clamp(28px,3.6vw,40px);">Brands I've Grown</h2>
+      <p>From ADHD coaches to wellness brands to full business operating systems, no two clients are the same, and that's the part I love.</p>
+    </div>
+    <div class="result-grid">
+      <article class="result-card reveal">
+        <div class="result-shot"><img src="result-lilo.jpg" alt="Instagram profile of Lilo Wellness" width="720" height="790" loading="lazy"></div>
+        <div class="result-body">
+          <p class="result-tag">ADHD coaching, Melbourne</p>
+          <h3>Lilo Wellness</h3>
+          <div class="result-stat">500 <i>to</i> 1,406</div>
+          <div class="result-label">Instagram followers</div>
+          <p class="result-desc">Started with a small audience and very few inquiries. A content system grew the following and brought in booked calls.</p>
+        </div>
+      </article>
+      <article class="result-card reveal">
+        <div class="result-shot"><img src="result-quincey.jpg" alt="Instagram profile of Quincey Williams" width="720" height="765" loading="lazy"></div>
+        <div class="result-body">
+          <p class="result-tag">Business and mindset creator</p>
+          <h3>Quincey Williams</h3>
+          <div class="result-stat">0 <i>to</i> 9,854</div>
+          <div class="result-label">Instagram followers</div>
+          <p class="result-desc">Built the page from scratch, from the first post to a growing audience.</p>
+        </div>
+      </article>
+      <article class="result-card reveal">
+        <div class="result-shot"><img src="result-toxic.jpg" alt="Instagram profile of Toxic Fashion" width="720" height="680" loading="lazy"></div>
+        <div class="result-body">
+          <p class="result-tag">Men's fashion store, Greece</p>
+          <h3>Toxic Fashion</h3>
+          <div class="result-stat">2k+ <i>and growing</i></div>
+          <div class="result-label">Starting point in views</div>
+          <p class="result-desc">Content and branding for a clothing store in Heraklion. Reach keeps climbing, and the page now stands at 3,529 followers.</p>
+        </div>
+      </article>
+      <article class="result-card reveal">
+        <div class="result-shot"><img src="result-sarah.jpg" alt="Instagram profile of Sarah Connelly" width="720" height="760" loading="lazy"></div>
+        <div class="result-body">
+          <span class="badge-new">Current client</span><p class="result-tag">Alcohol coaching</p>
+          <h3>Sarah Connelly</h3>
+          <div class="result-stat">Early wins</div>
+          <div class="result-label">Followers and views climbing</div>
+          <p class="result-desc">We just started working together, and followers and views are already moving. More numbers soon.</p>
+        </div>
+      </article>
+    </div>
+
+    <h3 class="sub-head reveal">Branding work</h3>
+    <div class="brand-row">
+      <article class="brand-card reveal">
+        <div class="brand-shot"><img src="result-cobham.jpg" alt="Instagram profile of Cobham Creations" width="720" height="460" loading="lazy"></div>
+        <div><h3>Cobham Creations</h3><p>Handmade crochet and jewellery brand. Branding and profile improvements.</p></div>
+      </article>
+      <article class="brand-card reveal">
+        <div class="brand-shot"><img src="result-compound.jpg" alt="Instagram profile of The Compound" width="720" height="405" loading="lazy"></div>
+        <div><h3>The Compound</h3><p>Branding improvements to give the page a sharper, more consistent look.</p></div>
+      </article>
+    </div>
+
+    <h3 class="sub-head reveal">More brands I've worked with</h3>
+    <div class="work-grid">
+      <div class="work-card reveal">
+        <div class="name">Her Root Kitchen</div>
+        <div class="tag">Nigerian food &amp; wellness, Houston TX</div>
+        <div class="desc">Content strategy and content bible for Tina's Redi Stew, wellness teas and immune booster shots, built around Instagram and TikTok content that turns cooking videos into trust.</div>
+      </div>
+      <div class="work-card reveal">
+        <div class="name">My Body Speaks</div>
+        <div class="tag">Health &amp; wellness, Neolife</div>
+        <div class="desc">Built the content plan and onboarding for a Neolife distributor's wellness brand across TikTok and Instagram.</div>
+      </div>
+      <div class="work-card more-card reveal">
+        <div class="name">And many more</div>
+        <div class="tag">Coaching, fashion, food, fitness</div>
+        <div class="desc">This is not the full list. Wondering if I've worked in your space? Let's talk about it.</div>
+        <a class="btn btn-dark magnetic" href="https://cal.com/success-ebri-1enwuj/30min-social-media-growth-call" target="_blank" rel="noopener" style="margin-top:16px;">Book a Call</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-visual reveal">
+      <div class="about-blob"></div>
+      <div class="about-photo">
+        <img src="profile.jpg" alt="Success Ebri">
+      </div>
+      <div class="about-tag at1">Content Strategy</div>
+      <div class="about-tag at2">Notion Expert</div>
+      <div class="about-tag at3">Email Automation</div>
+      <div class="about-tag at4">Paid Ads</div>
+    </div>
+    <div class="about-content reveal">
+      <p class="eyebrow">About Me</p>
+      <h2>Who is <span class="script-line" style="color:var(--accent);">Success Ebri Ferdinard</span>?</h2>
+      <p>My cousin has ADHD. When I saw how much he needed the right support, I couldn't just watch. I read, I researched, and I kept searching until I found coaches who truly understood him.</p>
+      <p>They changed things for him. Seeing that was one of the best feelings. But it also bothered me. Why was it so hard to find them? These coaches were kind, skilled and life changing, and almost nobody could find them. They were great at helping people, but no one had shown them how to be seen online. And every person who couldn't find them was missing help they needed.</p>
+      <p>I couldn't let that go. So I started helping coaches get seen. Today I build their content, their designs and a simple system that works in the background, so the right people find them and trust them. Every time a coach reaches one more person, I know that is one more life getting better. That's what keeps me going.</p>
+      <p>Away from my laptop, I'm a lively, curious person who loves a good adventure. I've been to mountain resorts, walked canopy trails and visited zoos, and one day I'll stand under the northern lights in Finland. I love a good meal, especially fresh vegetables. I'm always reading too, books like <em>The Mountain Is You</em>, <em>Outliers</em> and <em>The 10X Rule</em>. They remind me that growth is a choice you make every day.</p>
+      <p>And when we work together, you'll find me easy to talk to. I say things clearly, I listen well, and I care about your people as much as you do.</p>
+      <div class="about-quote">"A coach who is seen can help more people."</div>
+      <div class="stats-row">
+        <div>
+          <div class="stat-num" data-target="7">0</div>
+          <div class="stat-label">Clients Served</div>
+        </div>
+        <div>
+          <div class="stat-num" data-target="3">0</div>
+          <div class="stat-label">Continents Reached</div>
+        </div>
+        <div>
+          <div class="stat-num" data-target="7">0</div>
+          <div class="stat-label">Brands Grown</div>
+        </div>
+      </div>
+      <div class="about-cta">
+        <a href="https://cal.com/success-ebri-1enwuj/30min-social-media-growth-call" target="_blank" rel="noopener" class="btn btn-dark magnetic">Book a Call ↗</a>
+        <span class="signature">Success Ebri</span>
+      </div>
+    </div>
+  </div>
+  <div class="wrap about-photos">
+    <figure class="reveal"><img src="about-photo-1.jpg" alt="Success Ebri smiling outdoors under a palm tree" width="800" height="1000" loading="lazy"></figure>
+    <figure class="reveal"><img src="about-photo-3.jpg" alt="Success Ebri looking into the sunlight outside a modern building" width="800" height="1000" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="intro-video" id="intro">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Say Hello</p>
+      <h2 style="font-size:clamp(28px,3.6vw,40px);">A Quick Intro Before We Talk</h2>
+      <p>A couple of minutes on who I help, how I think about content, and what it's actually like to work together.</p>
+    </div>
+    <div class="video-frame reveal">
+      <video controls playsinline preload="metadata" poster="profile.jpg" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; background:#241b14;" title="Intro video">
+        <source src="intro.mp4%20(1)%20(1).mp4" type="video/mp4">
+        <source src="intro.mp4" type="video/mp4">
+        <source src="https://drive.usercontent.google.com/download?id=1ApNUyw6CiYMCjRv4Q8rZccB-cJXMZTON&export=download&confirm=t" type="video/mp4">
+        Your browser can't play this video.
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">How We Work Together</p>
+      <h2 style="font-size:clamp(28px,3.6vw,40px);">A Clear Path, From Hello To Done</h2>
+      <p>No guesswork about what happens after you book. Here is exactly how it goes.</p>
+    </div>
+    <div class="process-list">
+      <div class="process-step reveal">
+        <div class="step-num">1</div>
+        <div class="step-body"><h3>Book a call</h3><p>We hop on a discovery call to talk through your brand, your goals, and where you are right now.</p></div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">2</div>
+        <div class="step-body"><h3>Market &amp; competitor research</h3><p>I look into your space, your audience, and who else is competing for their attention.</p></div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">3</div>
+        <div class="step-body"><h3>Messaging foundation</h3><p>We nail down exactly who you are speaking to and build the core messaging everything runs on.</p></div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">4</div>
+        <div class="step-body"><h3>Marketing strategy</h3><p>A clear plan mapped to your goals, channel by channel, so nothing is left to guesswork.</p></div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">5</div>
+        <div class="step-body"><h3>Profile audit &amp; rebuild</h3><p>Your profiles get reworked so visitors turn into followers, and followers turn into leads.</p></div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">6</div>
+        <div class="step-body"><h3>Content calendar</h3><p>A structured calendar so every post has a job, nothing goes out just because it is Tuesday.</p></div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">7</div>
+        <div class="step-body"><h3>Content creation &amp; scheduling</h3><p>I write, design and schedule everything: captions, carousels, video edits, ready to publish.</p></div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">8</div>
+        <div class="step-body"><h3>Social media automations</h3><p>DMs and flows set up so your account keeps working for you even when you are offline.</p></div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">9</div>
+        <div class="step-body"><h3>Email automation <span class="step-optional">Optional</span></h3><p>Email sequences that quietly move leads towards booking a call, when you want that extra layer.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="designs" id="designs">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Design</p>
+      <h2 style="font-size:clamp(28px,3.6vw,40px);">Design Concepts</h2>
+      <p>A look at the visuals I build for wellness brands. Tap any design to see it bigger.</p>
+    </div>
+    <div class="design-grid">
+      <button class="design-card reveal" type="button" data-full="design-01-instagram-report%20(2).jpg" aria-label="Open Instagram growth report">
+        <img src="design-01-instagram-report%20(2).jpg" alt="Instagram growth report, analytics report concept" width="1024" height="1536" loading="lazy">
+        <span class="design-cap"><strong>Instagram growth report</strong>Analytics report concept</span>
+      </button>
+      <button class="design-card reveal" type="button" data-full="design-02-skincare-website%20(2).jpg" aria-label="Open Skincare studio website">
+        <img src="design-02-skincare-website%20(2).jpg" alt="Skincare studio website, website concept" width="1400" height="1120" loading="lazy">
+        <span class="design-cap"><strong>Skincare studio website</strong>Website concept</span>
+      </button>
+      <button class="design-card reveal" type="button" data-full="design-03-skincare-packaging%20(2).jpg" aria-label="Open Botanical skincare packaging">
+        <img src="design-03-skincare-packaging%20(2).jpg" alt="Botanical skincare packaging, packaging concept" width="1400" height="1120" loading="lazy">
+        <span class="design-cap"><strong>Botanical skincare packaging</strong>Packaging concept</span>
+      </button>
+      <button class="design-card reveal" type="button" data-full="design-04-wellness-brand-board%20(2).jpg" aria-label="Open Wellness brand board">
+        <img src="design-04-wellness-brand-board%20(2).jpg" alt="Wellness brand board, brand identity concept" width="1400" height="1120" loading="lazy">
+        <span class="design-cap"><strong>Wellness brand board</strong>Brand identity concept</span>
+      </button>
+      <button class="design-card reveal" type="button" data-full="design-05-carousel%20(2).jpg" aria-label="Open Street food carousel">
+        <img src="design-05-carousel%20(2).jpg" alt="Street food carousel, instagram carousel concept" width="1400" height="933" loading="lazy">
+        <span class="design-cap"><strong>Street food carousel</strong>Instagram carousel concept</span>
+      </button>
+      <button class="design-card reveal" type="button" data-full="design-06-offer-poster%20(2).jpg" aria-label="Open Weekend offer poster">
+        <img src="design-06-offer-poster%20(2).jpg" alt="Weekend offer poster, social post concept" width="1122" height="1402" loading="lazy">
+        <span class="design-cap"><strong>Weekend offer poster</strong>Social post concept</span>
+      </button>
+
+      <button class="design-card reveal" type="button" data-full="design-07-beauty-flyer.jpg" aria-label="Open Beauty studio flyer">
+        <img src="design-07-beauty-flyer.jpg" alt="Beauty studio flyer, flyer design" width="736" height="908" loading="lazy">
+        <span class="design-cap"><strong>Beauty studio flyer</strong>Flyer design</span>
+      </button>
+      <button class="design-card reveal" type="button" data-full="design-08-drink-ad.jpg" aria-label="Open Fresh drink ad">
+        <img src="design-08-drink-ad.jpg" alt="Fresh drink ad, product ad concept" width="736" height="920" loading="lazy">
+        <span class="design-cap"><strong>Fresh drink ad</strong>Product ad concept</span>
+      </button>
+      <button class="design-card reveal" type="button" data-full="design-09-brand-colours.jpg" aria-label="Open Brand colour options">
+        <img src="design-09-brand-colours.jpg" alt="Brand colour options, brand colour comparison" width="1400" height="2022" loading="lazy">
+        <span class="design-cap"><strong>Brand colour options</strong>Brand colour comparison</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="certs" id="certifications">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-left:auto;margin-right:auto;text-align:center;">
+      <p class="eyebrow">Certified</p>
+      <h2 style="font-size:clamp(28px,3.6vw,40px);">Trained In What Actually Works</h2>
+      <p>Two HubSpot Academy certifications behind the strategy I build for your brand.</p>
+    </div>
+    <div class="cert-grid">
+      <button class="cert-card reveal" type="button" data-full="cert-social-media.jpg" aria-label="Open Social Media Certified certificate">
+        <img src="cert-social-media.jpg" alt="HubSpot Academy Social Media Certified certificate for Success Ebri" loading="lazy">
+        <h3>Social Media Certified</h3>
+        <p>HubSpot Academy, issued Oct 2026</p>
+      </button>
+      <button class="cert-card reveal" type="button" data-full="cert-digital-marketing.png" aria-label="Open Digital Marketing Certified certificate">
+        <img src="cert-digital-marketing.png" alt="HubSpot Academy Digital Marketing Certified certificate for Success Ebri" loading="lazy">
+        <h3>Digital Marketing Certified</h3>
+        <p>HubSpot Academy, issued Mar 2025</p>
+      </button>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Certificate preview"><img alt="Certificate" src=""></div>
+
+<section id="tools">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-left:auto; margin-right:auto; text-align:center;">
+      <p class="eyebrow" style="justify-content:center;">My Toolkit</p>
+      <h2 style="font-size:clamp(28px,3.6vw,40px);">Tools Behind The Strategy</h2>
+    </div>
+    <div class="tools-row reveal">
+      <div class="tool-badge">Notion</div>
+      <div class="tool-badge">Meta Suite</div>
+      <div class="tool-badge">Canva</div>
+      <div class="tool-badge">CapCut</div>
+      <div class="tool-badge">ManyChat</div>
+      <div class="tool-badge">HubSpot</div>
+      <div class="tool-badge">Google Analytics</div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-left:auto; margin-right:auto; text-align:center;">
+      <p class="eyebrow" style="justify-content:center;">Reviews</p>
+      <h2 style="font-size:clamp(28px,3.6vw,40px);">Don't Just Take My Word For It</h2>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="testimonial-avatar">H</div>
+      <p class="testimonial-quote">"Working with Success brought real structure to our content. Our social presence finally feels intentional."</p>
+      <div class="testimonial-name">Hayley</div>
+      <a class="testimonial-video-link" href="https://drive.google.com/file/d/1ByblF_nxwCsOYqO7XG730D6Nuhe79-QO/preview" target="_blank" rel="noopener">▶ Watch Hayley's video testimonial</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap reveal">
+    <p class="eyebrow" style="justify-content:center;">Work With Me</p>
+    <h2>Ready To Grow Your Practice?</h2>
+    <p class="body">If you're a wellness or ADHD coach who's brilliant with clients but tired of guessing at the online part, let's have a real conversation about what's possible. No pressure, no pitch.</p>
+    <a href="https://cal.com/success-ebri-1enwuj/30min-social-media-growth-call" target="_blank" rel="noopener" class="btn btn-dark magnetic">Book a Free Discovery Call</a>
+    <div class="contact-socials">
+      <a href="https://www.instagram.com/theferdinardway/?hl=en" target="_blank" rel="noopener">📸 @theferdinardway</a>
+      <a href="https://www.upwork.com/freelancers/~01f5eb692a478cc805?mp_source=share" target="_blank" rel="noopener">🔗 Upwork</a>
+      <a href="mailto:ebrisuccess16@gmail.com">✉️ ebrisuccess16@gmail.com</a>
+    </div>
+    <p class="contact-note">Every project starts with a free discovery call, a relaxed conversation about your brand, your goals, and whether we're the right fit. Not ready for a call just yet? Send a note or say hello on Instagram or Upwork instead.</p>
+    <p class="closing-line">and remember, hope is the last thing ever lost. ✨</p>
+
+    <div class="booking-wrap">
+      <h3>Pick a time that works for you</h3>
+      <!-- Cal inline embed code begins -->
+      <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-30min-social-media-growth-call"></div>
+      <script type="text/javascript">
+        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+        Cal("init", "30min-social-media-growth-call", {origin:"https://app.cal.com"});
+        Cal.config = Cal.config || {};
+        Cal.config.forwardQueryParams = true;
+        Cal.ns["30min-social-media-growth-call"]("inline", {
+          elementOrSelector:"#my-cal-inline-30min-social-media-growth-call",
+          config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
+          calLink: "success-ebri-1enwuj/30min-social-media-growth-call",
+        });
+        Cal.ns["30min-social-media-growth-call"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+      <!-- Cal inline embed code ends -->
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">Success Ebri<span>@theferdinardway</span></div>
+    </div>
+    <p class="footer-tag">Social media that fills wellness and ADHD coaching practices.</p>
+    <ul class="footer-links">
+      <li><a href="https://www.instagram.com/theferdinardway/?hl=en" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.upwork.com/freelancers/~01f5eb692a478cc805?mp_source=share" target="_blank" rel="noopener">Upwork</a></li>
+      <li><a href="mailto:ebrisuccess16@gmail.com">Email</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Success Ebri. All rights reserved.</span>
+  </div>
+</footer>
+
+<script>
+  const burger = document.getElementById('burger');
+  const navUl = document.querySelector('nav ul');
+  const lb = document.getElementById('lightbox');
+  const lbImg = lb.querySelector('img');
+  document.querySelectorAll('[data-full]').forEach(c=>c.addEventListener('click',()=>{ lbImg.src=c.dataset.full; lb.classList.add('open'); }));
+  lb.addEventListener('click',()=>lb.classList.remove('open'));
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') lb.classList.remove('open'); });
+
+  burger.addEventListener('click',()=>{ const o=navUl.classList.toggle('open'); burger.setAttribute('aria-expanded',o); });
+  navUl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navUl.classList.remove('open')));
+
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting){
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  const statEls = document.querySelectorAll('.stat-num');
+  const statIo = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting){
+        const el = entry.target;
+        const target = parseInt(el.dataset.target, 10);
+        let current = 0;
+        const step = Math.max(1, Math.ceil(target / 40));
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target){ current = target; clearInterval(timer); }
+          el.textContent = current + '+';
+        }, 40);
+        statIo.unobserve(el);
+      }
+    });
+  }, { threshold: 0.4 });
+  statEls.forEach(el => statIo.observe(el));
+
+  document.querySelectorAll('.magnetic').forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      btn.style.transform = `translate(${x * 0.2}px, ${y * 0.3}px)`;
+    });
+    btn.addEventListener('mouseleave', () => { btn.style.transform = 'translate(0,0)'; });
+  });
+
+  document.querySelectorAll('.btn').forEach(btn => {
+    btn.addEventListener('click', function(e){
+      const rect = btn.getBoundingClientRect();
+      const ripple = document.createElement('span');
+      const size = Math.max(rect.width, rect.height);
+      ripple.className = 'ripple';
+      ripple.style.width = ripple.style.height = size + 'px';
+      ripple.style.left = (e.clientX - rect.left - size/2) + 'px';
+      ripple.style.top = (e.clientY - rect.top - size/2) + 'px';
+      btn.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 650);
+    });
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 980 && navUl) navUl.style.display = 'none';
+    });
+  });
+</script>
+
+</body>
+</html>
